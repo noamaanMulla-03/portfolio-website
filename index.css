@@ -1,31 +1,53 @@
 .myInfo {
     position: fixed;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.myProjects {
-    margin-left: 50%;
-}
+.myProjects {margin-left: 50%; border-left: 5px solid #007bff;}
 
-.contact i {
-    font-size: 1.8rem;
-}
+.myProjects p {font-style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 5%;}
+
+.contact i {font-size: 1.8rem;}
+
+video {background-color: #000000;}
 
 @media screen and (max-width: 885px) {
-    main {
-        flex-direction: column;
-    }
+    main {flex-direction: column;}
+
     .myInfo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         position: static;
         width: 100%;
         text-align: center;
-        height: 100vh;
     }
+
     .myProjects {
         margin-left: 0;
+        padding-left: 0 !important;
+        border: 0 !important;
     }
+
+    .myProjects h3 {
+        margin-top: 5rem !important;
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+    .myProjects p {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 455px) {
+    .myInfo span {font-size: 1.3rem;}
+
+    .myInfo h6 {font-size: 0.8rem;}
+
+    .myProjects h3 {font-size: 1.2rem;}
+
+    .myProjects p {font-size: 0.8rem;}
+
+    .footer p {font-size: 0.6rem; padding-bottom: 0.5rem;}
 }
