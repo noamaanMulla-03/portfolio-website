@@ -1,0 +1,31 @@
+.myInfo {
+    position: fixed;
+    width: 50%;
+}
+
+.myProjects {
+    margin-left: 50%;
+}
+
+.contact i {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 885px) {
+    main {
+        flex-direction: column;
+    }
+    .myInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+    }
+    .myProjects {
+        margin-left: 0;
+    }
+}
